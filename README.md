@@ -20,8 +20,8 @@ Amaç, gerçek zamanlı altın fiyatına göre dinamik ürün fiyatlaması ve ku
 
 ## 🌐 Canlı Demo / Live Demo
 
-- **Frontend:** [Vercel/Netlify linki buraya](#)
-- **Backend API:** [Heroku/Render linki buraya](#)
+- **Frontend:** [Vercel Linki](https://renart-intern-task-product-listing-app.vercel.app)
+- **Backend API:** [Render Linki](https://renart-task-product-listing-app.onrender.com)
 
 ---
 
