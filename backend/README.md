@@ -10,7 +10,7 @@ Node.js ve Express ile yazılmış, ürün verilerini JSON dosyasından okuyan v
 
 - 📊 Ürün verileri: `src/data/products.json`
 - 💰 Dinamik fiyat: (popularityScore + 1) × weight × goldPrice
-- 🏆 Gerçek zamanlı altın fiyatı: [metalpriceapi.com](https://metalpriceapi.com)
+- 🏆 Gerçek zamanlı altın fiyatı: [goldapi.io](https://www.goldapi.io/)
 - 🔍 Fiyat ve popülerlik aralığına göre filtreleme
 - 🏗️ Temiz, modüler dosya yapısı (controller, model, route, utils)
 
