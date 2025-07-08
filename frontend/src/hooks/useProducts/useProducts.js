@@ -8,7 +8,8 @@ export default function useProducts() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const res = await fetch("http://localhost:3001/products");
+        const apiUrl = import.meta.env.VITE_API_URL;
+        const res = await fetch(`${apiUrl}/products`);
         const data = await res.json();
         setProducts(data);
       } catch (err) {
