@@ -2,22 +2,22 @@ const axios = require("axios");
 
 async function getGoldPrice() {
   try {
-    const response = await axios.get(
-      "https://api.metalpriceapi.com/v1/latest",
-      {
-        params: {
-          api_key: "386532ce8444116f9b769b0d71b58200",
-          base: "XAU",
-          currencies: "USD",
-        },
-      }
-    );
-    const pricePerOunce = response.data.rates.USD;
-    const pricePerGram = pricePerOunce / 31.1035;
-    return pricePerGram;
+    const response = await axios.get("https://www.goldapi.io/api/XAU/USD", {
+      headers: {
+        "x-access-token":
+          process.env.GOLD_API_KEY || "goldapi-1jlsbk17mctwayex-io",
+        "Content-Type": "application/json",
+      },
+    });
+    // Doğrudan 1 gram 24 ayar altın fiyatı (USD)
+    return response.data.price_gram_24k;
   } catch (error) {
-    console.error("Gold price fetch error:", error.message);
-    return 75;
+    console.error(
+      "Gold price fetch error:",
+      error.message,
+      error.response?.data
+    );
+    return 75; // fallback
   }
 }
 
