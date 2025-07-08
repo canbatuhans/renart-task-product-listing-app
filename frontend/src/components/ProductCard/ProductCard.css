@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: url("../../fonts/avenir/Avenir-Book.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../../fonts/montserat/Montserrat-Regular.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../../fonts/montserat/Montserrat-Medium.otf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 24px;
+  min-width: 20%;
+  padding: 24px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8px;
+  transition: box-shadow 0.2s;
+}
+.product-card:hover {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+}
+.product-image-wrapper {
+  background: #fff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+}
+.product-info {
+  width: 100%;
+  text-align: left;
+}
+.product-title {
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #222;
+  letter-spacing: 0.1px;
+}
+.product-price {
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  font-weight: 400;
+  color: #888;
+  margin-bottom: 18px;
+}
+.product-color-label {
+  font-family: "Avenir-Book";
+  font-size: 12px;
+  color: #222;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+.product-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+.product-rating-score {
+  font-family: "Avenir-Book";
+  font-size: 14px;
+  color: #444;
+}
+@media (max-width: 900px) {
+  .product-card {
+    width: 100%;
+    padding: 20px 16px 16px 16px;
+  }
+
+  .product-image-wrapper {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%;
+    padding: 16px 12px 12px 12px;
+  }
+
+  .product-image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 16px 4px;
+    gap: 8px;
+  }
+  .product-image-wrapper {
+    width: 25%;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

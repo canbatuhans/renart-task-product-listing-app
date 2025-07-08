@@ -1,0 +1,30 @@
+.color-picker-row {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0 0 0;
+}
+.color-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.color-dot.selected {
+  border: 1px solid #222;
+}
+.color-dot-inner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.7;
+}

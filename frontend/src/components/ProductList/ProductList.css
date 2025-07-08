@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: url("../../fonts/avenir/Avenir-Book.ttf") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.product-list-root {
+  width: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+  padding-top: 36px;
+}
+
+.product-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 36px;
+  gap: 18px;
+}
+.product-list-title {
+  font-family: "Avenir-Book";
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  .product-list-title {
+    font-size: 32px;
+  }
+  .product-list-header {
+    gap: 8px;
+  }
+  .product-list-line {
+    width: 80px;
+  }
+}

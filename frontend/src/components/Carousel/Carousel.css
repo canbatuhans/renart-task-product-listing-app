@@ -1,0 +1,55 @@
+.custom-carousel-root {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-slide-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.custom-swiper-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: none;
+  border: none;
+  color: #111;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 0 12px;
+  outline: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-swiper-arrow.left {
+  left: -40px;
+}
+.custom-swiper-arrow.right {
+  right: -40px;
+}
+.custom-swiper-arrow svg {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .custom-swiper-arrow {
+    font-size: 2rem;
+    left: 0;
+    right: 0;
+    padding: 0 4px;
+  }
+  .custom-swiper-arrow.left {
+    left: 0;
+  }
+  .custom-swiper-arrow.right {
+    right: 0;
+  }
+}
