@@ -1,4 +1,4 @@
-# 🛒 Product Listing App
+# 🛒 Renart Intern Task: Product Listing App
 
 ## Proje Özeti / Project Overview
 
@@ -85,7 +85,7 @@ task-product-listing/
 - **Framework:** Node.js + Express.js
 - **API:** RESTful
 - **Fiyat Hesaplama:** (popularityScore + 1) × weight × goldPrice
-- **Altın Fiyatı:** Gerçek zamanlı API (metalpriceapi.com)
+- **Altın Fiyatı:** Gerçek zamanlı API (goldapi.io)
 - **Filtreleme:** Fiyat aralığı ve popülerlik skoru
 
 ### Frontend
